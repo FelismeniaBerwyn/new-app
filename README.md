@@ -1,2 +1,2 @@
-# Activity 2: new-app
+# Activity 2: new-apps
 
