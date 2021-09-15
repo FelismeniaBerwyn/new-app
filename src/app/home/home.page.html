@@ -1,20 +1,40 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<!-- side bar menu -->
+<ion-menu content-id="main-content" type="overlay" side="start">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title> Home </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content>
+    <ion-list>
+      <ion-list-header> Navigate </ion-list-header>
+      <ion-menu-toggle auto-hide="false">
+        <ion-item button>
+          <ion-icon slot="start" name="Home"> </ion-icon>
+          <ion-label> Home </ion-label>
+        </ion-item>
+        <ion-item button>
+          <ion-icon slot="start" name="Home"> </ion-icon>
+          <ion-label> Home </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- error ion-page not an element just use div tag to solve -->
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-toggle>
+          <ion-button>
+            <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons>
+      <ion-title>Header</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</div>
